@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,23 +18,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dXb-on-jNT">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speedometer" translatesAutoresizingMaskIntoConstraints="NO" id="dXb-on-jNT">
                                 <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="Dmn-Pe-2dN"/>
                                     <constraint firstAttribute="width" constant="300" id="rE5-Nm-zeu"/>
                                 </constraints>
                             </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="olnJarq" translatesAutoresizingMaskIntoConstraints="NO" id="KMn-7r-Baw">
+                                <rect key="frame" x="131" y="243" width="326" height="130"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="3m8-a7-p6u"/>
+                                    <constraint firstAttribute="height" constant="130" id="oTY-0C-z9j"/>
+                                    <constraint firstAttribute="width" constant="326" id="rhZ-kI-FLN"/>
+                                    <constraint firstAttribute="height" constant="50" id="ygI-ya-PgA"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3m8-a7-p6u"/>
+                                        <exclude reference="ygI-ya-PgA"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="dXb-on-jNT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Dj3-yb-ZBa"/>
                             <constraint firstItem="dXb-on-jNT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ey0-5I-Cls"/>
+                            <constraint firstItem="KMn-7r-Baw" firstAttribute="leading" secondItem="dXb-on-jNT" secondAttribute="trailing" constant="-319" id="l3I-0T-BF7"/>
+                            <constraint firstItem="KMn-7r-Baw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="224" id="mjm-Mk-mwu"/>
+                            <constraint firstItem="KMn-7r-Baw" firstAttribute="top" secondItem="dXb-on-jNT" secondAttribute="bottom" constant="-207" id="oI1-h2-q93"/>
+                            <constraint firstItem="KMn-7r-Baw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="225" id="vzZ-Px-A45"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mjm-Mk-mwu"/>
+                                <exclude reference="vzZ-Px-A45"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Ag1-yW-I3N" appends="YES" id="Pls-lB-gmH"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="needle" destination="KMn-7r-Baw" id="dzZ-HF-Zhv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="Ag1-yW-I3N">
+                    <connections>
+                        <action selector="speed:" destination="BYZ-38-t0r" id="rsD-Eu-NAh"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="olnJarq" width="200" height="200"/>
+        <image name="speedometer" width="150" height="150"/>
+    </resources>
 </document>

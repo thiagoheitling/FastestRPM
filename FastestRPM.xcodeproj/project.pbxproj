@@ -13,7 +13,6 @@
 		D0879C441C51619700EE82A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0879C421C51619700EE82A0 /* Main.storyboard */; };
 		D0879C461C51619700EE82A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0879C451C51619700EE82A0 /* Assets.xcassets */; };
 		D0879C491C51619700EE82A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0879C471C51619700EE82A0 /* LaunchScreen.storyboard */; };
-		D0879C531C51651800EE82A0 /* speedometer.png in Resources */ = {isa = PBXBuildFile; fileRef = D0879C521C51651800EE82A0 /* speedometer.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		D0879C451C51619700EE82A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0879C481C51619700EE82A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0879C4A1C51619700EE82A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D0879C521C51651800EE82A0 /* speedometer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = speedometer.png; path = Images/speedometer.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +66,6 @@
 				D0879C451C51619700EE82A0 /* Assets.xcassets */,
 				D0879C471C51619700EE82A0 /* LaunchScreen.storyboard */,
 				D0879C4A1C51619700EE82A0 /* Info.plist */,
-				D0879C501C51630E00EE82A0 /* Images */,
 				D0879C391C51619700EE82A0 /* Supporting Files */,
 			);
 			path = FastestRPM;
@@ -80,14 +77,6 @@
 				D0879C3A1C51619700EE82A0 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D0879C501C51630E00EE82A0 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				D0879C521C51651800EE82A0 /* speedometer.png */,
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +139,6 @@
 				D0879C491C51619700EE82A0 /* LaunchScreen.storyboard in Resources */,
 				D0879C461C51619700EE82A0 /* Assets.xcassets in Resources */,
 				D0879C441C51619700EE82A0 /* Main.storyboard in Resources */,
-				D0879C531C51651800EE82A0 /* speedometer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
